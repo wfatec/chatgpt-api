@@ -1,6 +1,6 @@
 {
-  "name": "chatgpt",
-  "version": "5.2.5",
+  "name": "@wfatec/chatgpt",
+  "version": "0.0.2",
   "description": "Node.js client for the official ChatGPT API.",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
   "repository": "transitive-bullshit/chatgpt-api",
@@ -19,7 +19,9 @@
     "build",
     "bin"
   ],
-  "bin": "./bin/cli.js",
+  "bin": {
+    "gpt": "./bin/cli.js"
+  },
   "engines": {
     "node": ">=14"
   },
@@ -41,6 +43,7 @@
     "conf": "^11.0.1",
     "eventsource-parser": "^1.0.0",
     "js-tiktoken": "^1.0.5",
+    "isomorphic-fetch": "^3.0.0",
     "keyv": "^4.5.2",
     "p-timeout": "^6.1.1",
     "quick-lru": "^6.1.1",
